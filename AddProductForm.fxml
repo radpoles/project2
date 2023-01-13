@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="401.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddProductForm">
+    <children>
+        <Text fx:id="addProductLabel" layoutX="113.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Product" wrappingWidth="105.13671875">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fx:id="addProductIDLabel" layoutX="63.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+        <Text fx:id="addProductNameLabel" layoutX="51.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="70.40000000000009" />
+        <Text fx:id="addProductInvLabel" layoutX="59.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inv" wrappingWidth="56.13671875" />
+        <Text fx:id="addProductPriceLabel" layoutX="50.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" wrappingWidth="84.0" />
+        <Text fx:id="addProductMaxLabel" layoutX="59.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max" wrappingWidth="56.13671875" />
+        <Text fx:id="addProductMinLabel" layoutX="147.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Min" wrappingWidth="70.40000000000009" />
+        <Button fx:id="addProductSaveButton" layoutX="328.0" layoutY="353.0" mnemonicParsing="false" onAction="#onAddProductSaveButton" text="Save" />
+        <Button fx:id="addProductCancelButton" layoutX="377.0" layoutY="353.0" mnemonicParsing="false" onAction="#onAddProductCancelButton" text="Cancel" />
+        <TextField fx:id="addProductIDText" editable="false" layoutX="87.0" layoutY="59.0" promptText="Auto Gen- Disabled">
+            <font>
+                <Font name="System Italic" size="12.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="addProductNameText" layoutX="87.0" layoutY="101.0" />
+        <TextField fx:id="addProductInvText" layoutX="87.0" layoutY="142.0" />
+        <TextField fx:id="addProductPriceText" layoutX="87.0" layoutY="182.0" />
+        <TextField fx:id="addProductMaxText" layoutX="86.0" layoutY="219.0" prefHeight="26.0" prefWidth="56.0" />
+        <TextField fx:id="addProductMinText" layoutX="175.0" layoutY="219.0" prefHeight="26.0" prefWidth="56.0" />
+      <TableView fx:id="addProductTable1" layoutX="258.0" layoutY="85.0" prefHeight="100.0" prefWidth="341.0">
+        <columns>
+          <TableColumn fx:id="partIDCol1" prefWidth="45.60003662109375" text="Part ID" />
+            <TableColumn fx:id="nameCol1" prefWidth="68.0" text="Part Name" />
+          <TableColumn fx:id="invCol1" prefWidth="91.5999755859375" text="Inventory Level" />
+            <TableColumn fx:id="priceCol1" prefWidth="134.800048828125" text="Price/Cost per Unit" />
+        </columns>
+      </TableView>
+      <Button fx:id="addProductRAPButton" layoutX="437.0" layoutY="352.0" mnemonicParsing="false" onAction="#onAddProductRAPButton" prefHeight="26.0" prefWidth="156.0" text="Remove Associated Part" />
+      <Button fx:id="addProductAddButton" layoutX="496.0" layoutY="195.0" mnemonicParsing="false" onAction="#onAddProductAddButton" text="Add" />
+      <TableView fx:id="addProductTable2" layoutX="258.0" layoutY="232.0" prefHeight="100.0" prefWidth="341.0">
+         <columns>
+            <TableColumn fx:id="partIDCol2" prefWidth="45.60003662109375" text="Part ID" />
+            <TableColumn fx:id="nameCol2" prefWidth="68.0" text="Part Name" />
+            <TableColumn fx:id="invCol2" prefWidth="91.5999755859375" text="Inventory Level" />
+            <TableColumn fx:id="priceCol2" prefWidth="134.800048828125" text="Price/Cost per Unit" />
+         </columns>
+      </TableView>
+      <TextField fx:id="addProductSearchBar" layoutX="416.0" layoutY="44.0" onAction="#onAddProductsSearchBar" prefHeight="26.0" prefWidth="156.0" promptText="Search by Part ID or Name" />
+    </children>
+</AnchorPane>

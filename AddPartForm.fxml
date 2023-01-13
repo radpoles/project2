@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddPartForm">
+   <children>
+      <RadioButton fx:id="addPartInRadio" layoutX="293.0" layoutY="105.0" mnemonicParsing="false" onAction="#onAddPartIn" selected="true" text="In-House">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggleAdd" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="addPartOutRadio" layoutX="389.0" layoutY="105.0" mnemonicParsing="false" onAction="#onAddPartOut" text="Outsourced" toggleGroup="$toggleAdd" />
+      <Text fx:id="addPartLabel" layoutX="113.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Part" wrappingWidth="105.13671875">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="addPartIDLabel" layoutX="63.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+      <Text fx:id="addPartNameLabel" layoutX="51.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="70.40000000000009" />
+      <Text fx:id="addPartInvLabel" layoutX="59.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inv" wrappingWidth="56.13671875" />
+      <Text fx:id="addPartPriceLabel" layoutX="27.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price/Cost" wrappingWidth="84.0" />
+      <Text fx:id="addPartMaxLabel" layoutX="59.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max" wrappingWidth="56.13671875" />
+      <Text fx:id="addPartMachineIDCompanyNameLabel" layoutX="20.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Machine ID" wrappingWidth="62.40000000000009" />
+      <Text fx:id="addPartMinLabel" layoutX="243.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Min" wrappingWidth="70.40000000000009" />
+      <Button fx:id="addPartSaveButton" layoutX="343.0" layoutY="340.0" mnemonicParsing="false" onAction="#onAddPartSaveButton" text="Save" />
+      <Button fx:id="addPartCancelButton" layoutX="421.0" layoutY="340.0" mnemonicParsing="false" onAction="#onAddPartCancelButton" text="Cancel" />
+      <TextField fx:id="addPartIDText" editable="false" layoutX="87.0" layoutY="59.0" promptText="Auto Gen- Disabled">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="addPartNameText" layoutX="87.0" layoutY="101.0" />
+      <TextField fx:id="addPartInvText" layoutX="87.0" layoutY="142.0" />
+      <TextField fx:id="addPartPriceText" layoutX="87.0" layoutY="182.0" />
+      <TextField fx:id="addPartMachineIDText" layoutX="87.0" layoutY="256.0" />
+      <TextField fx:id="addPartMaxText" layoutX="86.0" layoutY="219.0" prefHeight="26.0" prefWidth="149.0" />
+      <TextField fx:id="addPartMinText" layoutX="269.0" layoutY="219.0" prefHeight="26.0" prefWidth="149.0" />
+   </children>
+</AnchorPane>
