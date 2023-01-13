@@ -1,4 +1,4 @@
-# Java
+# Java Project
 
 This is an inventory management application I made for my Java class.
 
